@@ -39,6 +39,14 @@
                                 <td class="text-center">
                                     <a href="{{ route('enrollments.show', $enrollment) }}"
                                         class="btn btn-info btn-sm text-white">Chi tiết</a>
+
+                                    <form action="{{ route('enrollments.destroy', $enrollment) }}" method="POST"
+                                        class="d-inline"
+                                        onsubmit="return confirm('Bạn chắc chắn muốn hủy đăng ký khóa học này?')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                                    </form>
                                 </td>
                             </tr>
                         @empty

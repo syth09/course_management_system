@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('enrolled_at')->default(now());
             $table->timestamps();
 
-            $table->unique(['course_id', 'student_id']);
+            // $table->unique(['course_id', 'student_id']);
         });
     }
 

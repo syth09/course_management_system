@@ -45,4 +45,7 @@ Route::get('courses/{course}/enrollments', [EnrollmentController::class, 'indexB
 
 // ==================== OPTIONAL ROUTES ====================
 // Nếu sau này cần thêm chức năng khôi phục nhiều khóa học hoặc bulk actions
-// Route::delete('courses/bulk-delete', [CourseController::class, 'bulkDestroy'])->name('courses.bulk.destroy');
+Route::delete('courses/bulk-delete', [CourseController::class, 'bulkDestroy'])->name('courses.bulk.destroy');
+
+// Lessons (tất cả bài học)
+Route::get('lessons', [LessonController::class, 'index'])->name('lessons.index');

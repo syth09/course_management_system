@@ -37,8 +37,13 @@
                         @forelse($lessons as $lesson)
                             <tr>
                                 <td class="text-center fw-bold">{{ $lesson->order }}</td>
-                                <td><strong>{{ $lesson->title }}</strong></td>
-                                <td>{{ Str::limit($lesson->content, 80) }}</td>
+                                <td
+                                    style="max-width: 360px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                    <strong>{{ $lesson->title }}</strong>
+                                </td>
+                                <td
+                                    style="max-width: 360px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                    {{ Str::limit($lesson->content, 80) }}</td>
                                 <td>
                                     @if ($lesson->video_url)
                                         <a href="{{ $lesson->video_url }}" target="_blank" class="text-primary small">Xem

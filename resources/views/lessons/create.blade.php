@@ -30,7 +30,7 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-bold">Nội dung bài học</label>
-                        <textarea name="content" class="form-control" rows="6">{{ old('content') }}</textarea>
+                        <textarea name="content" class="form-control " rows="6">{{ old('content') }}</textarea>
                     </div>
 
                     <div class="mb-3">

@@ -57,6 +57,11 @@ class LessonController extends Controller
             ->with('success', 'Cập nhật bài học thành công!');
     }
 
+    public function show(Course $course, Lesson $lesson)
+    {
+        return view('lessons.show', compact('course', 'lesson'));
+    }
+
     public function destroy(Course $course, Lesson $lesson)
     {
         $lesson->delete();

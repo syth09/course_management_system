@@ -88,6 +88,8 @@
                                 <strong>{{ $lesson->order }}. {{ $lesson->title }}</strong>
                             </div>
                             <div>
+                                <a href="{{ route('lessons.show', [$course, $lesson]) }}"
+                                    class="btn btn-primary btn-sm">Xem</a>
                                 <a href="{{ route('lessons.edit', [$course, $lesson]) }}"
                                     class="btn btn-warning btn-sm">Sửa</a>
                                 <form action="{{ route('lessons.destroy', [$course, $lesson]) }}" method="POST"

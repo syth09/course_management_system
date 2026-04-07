@@ -45,4 +45,4 @@ Hệ thống quản lý khóa học trực tuyến được xây dựng bằng L
     php artisan serve
     ```
 
-    - Truy cập server: ```[http://127.0.0.1:8000]```
+- Truy cập server: `[http://127.0.0.1:8000]`

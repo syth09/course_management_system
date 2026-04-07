@@ -31,12 +31,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('lessons.*') ? 'active fw-bold' : '' }}"
-                                href="{{ route('courses.index') }}">
-                                <i class="bi bi-journal-text me-2"></i> Bài Học
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('enrollments.*') ? 'active fw-bold' : '' }}"
                                 href="{{ route('enrollments.index') }}">
                                 <i class="bi bi-person-check me-2"></i> Đăng Ký
